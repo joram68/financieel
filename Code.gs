@@ -67,7 +67,7 @@ function newYear_(from,to){
  if(!from||!to||to<=from)throw new Error('Ongeldig boekjaar.');
  const ss=SpreadsheetApp.getActive();
  const es=ss.getSheetByName(EXP),er=es.getDataRange().getValues(),ec=[];
- er.slice(1).filter(r=>+r[0]===from&&r[r.length-1]!==false).forEach(r=>{const fixed=r[4]==='Vast maandelijks';ec.push([to,Utilities.getUuid(),r[2],r[3],r[4],...r.slice(5,17).map(v=>fixed?v:''),true]);});
+ er.slice(1).filter(r=>+r[0]===from&&r[r.length-1]!==false).forEach(r=>{const repeat=['Vast maandelijks','Vast jaarlijks'].includes(r[4]);ec.push([to,Utilities.getUuid(),r[2],r[3],r[4],...r.slice(5,17).map(v=>repeat?v:''),true]);});
  if(ec.length)es.getRange(es.getLastRow()+1,1,ec.length,ec[0].length).setValues(ec);
  const is=ss.getSheetByName(INC),ir=is.getDataRange().getValues(),ic=[];
  ir.slice(1).filter(r=>+r[0]===from&&r[r.length-1]!==false).forEach(r=>ic.push([to,Utilities.getUuid(),r[2],...Array(12).fill(''),true]));
