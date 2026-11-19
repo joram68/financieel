@@ -21,7 +21,7 @@ De repository bevat geen persoonlijke bedragen. Financiële gegevens worden in j
 De toegang wordt gecontroleerd aan de hand van het Google-account. Deel de webapp niet met anderen.
 
 ## Jaarwerking
-Een nieuw boekjaar neemt alle onkostenomschrijvingen over. Alleen regels die als **Vast maandelijks** zijn gemarkeerd, nemen automatisch de bedragen mee. Andere bedragen worden leeggemaakt om te voorkomen dat eenmalige uitgaven zomaar opnieuw worden gepland. Controleer de categorie en het soort van elke onkost.
+Een nieuw boekjaar neemt alle onkostenomschrijvingen over. Regels die als **Vast maandelijks** of **Vast jaarlijks** zijn gemarkeerd, nemen automatisch hun maandbedragen mee. Variabele en eenmalige bedragen worden leeggemaakt. Andere bedragen worden leeggemaakt om te voorkomen dat eenmalige uitgaven zomaar opnieuw worden gepland. Controleer de categorie en het soort van elke onkost.
 
 ## GitHub Pages
 Ga naar **Settings → Pages**, kies **Deploy from a branch**, selecteer **main** en map **/(root)**. De pagina wordt daarna beschikbaar via de GitHub Pages-URL.
